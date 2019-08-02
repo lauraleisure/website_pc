@@ -1,0 +1,144 @@
+/*左侧下拉菜单 start*/
+header{
+    font-size: 1.143rem;
+    width: 100%;
+    padding:0 0.714rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background: #222;
+    color: #fff;
+}
+header nav ul li{
+}
+header a{
+    color: #fff;
+    padding: 0 1rem;
+}
+header a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+/**/
+aside{
+    width: 14.214rem;
+    background: rgba(238, 238, 238, 0.96);
+    border: 1px solid #e5e5e5;
+    height: 100%;
+}
+aside a,.crumb-part a{
+    color: #666;
+}
+.menu_dropdown,.wrapper{
+    height: 100%;
+}
+.menu_dropdown dl dt{
+    font-size: 1.143rem;
+    padding-left:0.714rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.menu_dropdown dl dt:hover{
+    color: #148cf1;
+}
+.menu_dropdown dl dt span{
+    width:7.5rem ;
+}
+.menu_dropdown  ul li.current,.menu_dropdown  ul li:hover{
+    background: #fafafa;
+}
+.menu_dropdown  ul li{
+    padding-left:3.714rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+.menu_dropdown ul li a:hover{
+    color: #148cf1;
+}
+
+/*左侧下拉菜单 end*/
+
+/*设置小图标 start*/
+.icon{
+    display: inline-block;
+}
+.dropDown_A .icon{
+    width: 1.8rem;
+    height: 3.5rem;
+}
+.menu_dropdown .icon{
+    width: 3rem;
+    height: 3.5rem;
+}
+.crumb-part .icon{
+    width: 3rem;
+    height: 3rem;
+}
+.icon.icon-add{
+     background: url('../images/icon-add-w.png') center no-repeat;
+     background-size: 1.5rem auto;
+ }
+.icon.dropdown-arrow{
+    background: url('../images/icon-dropdown-w.png') center no-repeat;
+    background-size: 1.1rem auto;
+}
+.icon.menu_dropdown-arrow{
+    background: url('../images/icon-fold.png') center no-repeat;
+    background-size: 1.5rem auto;
+}
+.selected .icon.menu_dropdown-arrow{
+    /*background: url('../images/icon-unfold.png') center no-repeat;*/
+    /*background-size: 1.5rem auto;*/
+    transform: rotate(180deg);
+}
+.selected dd{
+    display: block!important;
+}
+.icon.icon-news{
+    background: url('../images/icon-news.png') center no-repeat;
+    background-size: 1.25rem auto;
+}
+.icon.icon-img{
+    background: url('../images/icon-img.png') center no-repeat;
+    background-size: 1.65rem auto;
+}
+.icon.icon-prod{
+    background: url('../images/icon-prod.png') center no-repeat;
+    background-size: 1.65rem auto;
+}
+.icon.icon-comment{
+    background: url('../images/icon-comment.png') center no-repeat;
+    background-size: 1.45rem auto;
+}.icon.icon-member{
+    background: url('../images/icon-member.png') center no-repeat;
+    background-size: 1.45rem auto;
+}
+.icon.icon-admin{
+    background: url('../images/icon-admin.png') center no-repeat;
+    background-size: 1.45rem auto;
+}
+ /*右侧导航小图标*/
+.icon.icon-home{
+    background: url('../images/icon-home.png') center no-repeat;
+    background-size: 1.5rem auto;
+}
+.icon.icon-navigator{
+    background: url('../images/icon-right-arrow.png') center no-repeat;
+    background-size: 1rem auto;
+}
+/*设置小图标 end*/
+/*右侧内容*/
+.wrapper{
+    flex-grow: 1;
+}
+.wrapper nav.crumb-part{
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.wrapper nav ul{
+    width: 100%;
+    height: 100%;
+}
+/*.crumb-part a:hover{*/
+    /*color: #148cf1;*/
+/*}*/

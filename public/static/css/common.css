@@ -1,0 +1,99 @@
+/*pc端*/
+*{ padding: 0; margin: 0;}
+html, body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "SimSun";
+    -webkit-text-size-adjust: none;
+    background: #f0f0f0;
+}
+body,header,section,div,footer,div,aside{
+    box-sizing: border-box;
+}
+body{
+    min-width: 1366px;
+    min-height: 768px;
+    width: 100%;
+    height: 100%;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*   min-width: 1366px;
+       min-height: 768px;*/
+}
+ul li{
+    list-style: none;
+}
+a,a:link,a:visited,a:active,a:hover{
+    text-decoration: none;
+}
+.text-center {
+    text-align:center;
+}
+.text-right {
+    text-align:right;
+}
+.text-left {
+    text-align:left;
+}
+/*弹性盒子相关的设置*/
+.flex-box{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+/*弹性盒子布局，每个盒子所占比例*/
+.flex1{ flex: 0.1;}
+.flex2{ flex: 0.2;}
+.flex3{ flex: 0.3;}
+.flex4{ flex: 0.4;}
+.flex5{ flex: 0.5;}
+.flex6{ flex: 0.6;}
+.flex7{ flex: 0.7;}
+.flex8{ flex: 0.8;}
+.flex9{ flex: 0.9;}
+.jc-st{
+    justify-content: flex-start;
+}
+.jc-s{
+    justify-content: space-between;
+}
+.jc-e{
+    justify-content: flex-end;
+}
+.jc-c{
+    justify-content: center;
+}
+.ai-c{
+    align-items: center;
+}
+.ai-s{
+    align-items: flex-start;
+}
+.ai-e{
+    align-items: flex-end;
+}
+.ai-stretch{
+    align-items: stretch;
+}
+.scrollDiv {
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+.noScrollDiv {
+    height: 100%;
+    overflow: hidden;
+}
+/**/
+#pageWrapper{
+    width:100%;
+    background: #fff;
+}

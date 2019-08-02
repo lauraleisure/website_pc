@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+    <script src="../../libs/jquery/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <script src="./scripts/menudropdown.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            _ctrl.init();
+        })
+    </script>
+</head>
+<body>
+<div class="container flex-box flex-col "  id="container">
+    <header class="flex-box jc-s ai-c">
+        <nav  class="flex5 ">
+            <ul class="flex-box jc-st ai-c">
+            <li class="title">laura leisure后台管理系统 <span>v1.0</span></li>
+            <li class="addMenu">
+                <a class="dropDown_A flex-box jc-s ai-c" href="#">
+                    <i class="icon icon-add"></i>
+                    <span>新增</span>
+                    <i class="icon dropdown-arrow"></i>
+                </a>
+              <ul class="" style="display: none">
+                  <li>资讯</li>
+                  <li>图片</li>
+                  <li>产品</li>
+                  <li>用户</li>
+              </ul>
+            </li>
+            </ul>
+        </nav>
+        <nav class="flex5">
+            <ul class="flex-box jc-e ai-c">
+            <li class="userRole">超级管理员</li>
+            <li class="userName">
+                <a class="dropDown_A flex-box jc-s ai-c " href="#">
+                    <span>admin</span>
+                    <i class="icon dropdown-arrow"></i>
+                </a>
+                <ul class="" style="display: none">
+                    <li>个人信息</li>
+                    <li>切换账户</li>
+                    <li>退出</li>
+                </ul>
+            </li>
+            <li class="messageBox">
+                <a class="dropDown_A flex-box jc-s ai-c " href="#">
+                  <span>消息</span>
+                 </a>
+            </li>
+            <li class="skins">
+                <a class="dropDown_A flex-box jc-s ai-c " href="#">
+                   <span>换肤</span>
+               </a>
+                <ul class="" style="display: none">
+                    <li>黑色</li>
+                    <li>蓝色</li>
+                    <li>绿色</li>
+                    <li>黄色</li>
+                    <li>红色</li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="pageWrapper" class="flex-box  noScrollDiv">
+        <aside class="menu_dropdown  text-left noScrollDiv">
+            <div class="scrollDiv">
+            <dl class="selected menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-news"></i>
+                    <span class="title">资讯管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: block">
+                    <ul><li class="current"><a href="">资讯管理</a></li></ul>
+                </dd>
+            </dl>
+            <dl class="menu-row selected">
+                <dt class=" flex-box jc-st ai-c ">
+                    <i class="icon icon-img"></i>
+                    <span class="title">图片管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul><li class=""><a href="">图片管理</a></li></ul>
+                </dd>
+            </dl>
+            <dl class="selected menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-prod"></i>
+                    <span class="title">产品管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul>
+                        <li class=""><a href="">品牌管理</a></li>
+                        <li class=""><a href="">分类管理</a></li>
+                        <li class=""><a href="">产品管理</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="selected menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-comment"></i>
+                    <span class="title">评论管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul>
+                        <li class=""><a href="">评论列表</a></li>
+                        <li class=""><a href="">意见反馈</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="selected menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-member"></i>
+                    <span class="title">会员管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul>
+                        <li class=""><a href="">会员列表</a></li>
+                        <li class=""><a href="">等级管理</a></li>
+                        <li class=""><a href="">积分管理</a></li>
+                        <li class=""><a href="">浏览记录</a></li>
+                        <li class=""><a href="">下载记录</a></li>
+                        <li class=""><a href="">分享记录</a></li>
+                        <li class=""><a href="">删除的会员</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="selected menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-admin"></i>
+                    <span class="title">管理员管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul>
+                        <li class=""><a href="">角色管理</a></li>
+                        <li class=""><a href="">权限管理</a></li>
+                        <li class=""><a href="">管理员列表</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="selected menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-admin"></i>
+                    <span class="title">系统统计</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul>
+                        <li class=""><a href="">折线图</a></li>
+                        <li class=""><a href="">时间轴折线图</a></li>
+                        <li class=""><a href="">区域图</a></li>
+                        <li class=""><a href="">柱状图</a></li>
+                        <li class=""><a href="">饼状图</a></li>
+                        <li class=""><a href="">3D柱状图</a></li>
+                        <li class=""><a href="">3D饼状图</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+        </aside>
+        <section  class="wrapper  text-left">
+            <nav class="crumb-part">
+                <ul class="flex-box jc-st ai-c">
+                    <li>
+                        <a class="flex-box jc-s ai-c " href="#">
+                            <i class="icon icon-home"></i>
+                            <span>首页</span>
+                            <i class="icon icon-navigator"></i>
+                      </a>
+                    </li>
+                    <li>
+                        <a class="flex-box jc-s ai-c " href="#">
+                            <span>资讯管理</span>
+                            <i class="icon icon-navigator"></i>
+                        </a>
+                      </li>
+                    <li>资讯列表</li>
+            </ul>
+            </nav>
+        </section>
+    </section>
+</div>
+</body>
+</html>

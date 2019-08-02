@@ -1,0 +1,24 @@
+{
+  "name": "website_pc",
+  "version": "1.0.0",
+  "description": "前端网站设计页面汇总-pc端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanglei198812/website_pc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhanglei198812/website_pc/issues"
+  },
+  "homepage": "https://github.com/zhanglei198812/website_pc#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
