@@ -271,10 +271,16 @@ iframe{
     background: url(../images/icon-edit-a.png)  center no-repeat;
     background-size: 1.8rem auto;
 }
-.select-part{
+.select-part,.message-part{
     padding: 0.714rem 0;
+}
+.tb_title{
+    padding: 0 0.714rem;
 }
 /*搜索区域样式end*/
 .right-part{
 
+}
+h1,h3{
+   line-height: 3rem;
 }

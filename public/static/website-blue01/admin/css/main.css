@@ -172,7 +172,7 @@ aside a,.crumb-part a{
     /*color: #148cf1;*/
 /*}*/
 .content-wrapper{
-    padding: 0.714rem;
+    padding: 0.714rem 0 0.714rem 2rem;
 }
 .opt-part{
     padding: 0.714rem ;
@@ -180,4 +180,61 @@ aside a,.crumb-part a{
     border: 1px solid #ddd;
     margin: 0.5rem 0;
 }
-
+.message-part h3{
+    margin-right: 1rem;
+}
+table.system_info{
+    margin-top: 1rem;
+}
+table.system_info  tr td{
+    padding: 0 0.714rem;
+    text-align: left;
+}
+.dislpayArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 14.215rem;
+    width: 0px;
+    height: 100%;
+    z-index: 1001;
+    -moz-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+.dislpayArrow a {
+    background: url('../images/icon_arrow.png')  0 0 no-repeat;
+}
+.dislpayArrow a {
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 61px;
+    top: 50%;
+    margin-top: -30px;
+    outline: none;
+    z-index: 1002;
+}
+.dislpayArrow a:hover {
+    text-decoration: none;
+    background-position: right 0;
+}
+.dislpayArrow a.open:hover {
+    background-position: right -61px;
+}
+.dislpayArrow a:hover {
+    text-decoration: none;
+    background-position: right 0;
+}
+.dislpayArrow a.open {
+    background-position: 0 -61px;
+}
+footer{
+    margin-top: 2rem;
+    color: #565656;
+}
+footer div{
+    line-height: 3rem;
+}
