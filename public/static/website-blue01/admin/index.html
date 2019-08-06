@@ -14,8 +14,9 @@
     </script>
 </head>
 <body>
-<div class="container flex-box flex-col "  id="container">
-    <header class="flex-box jc-s ai-c">
+<div class="container noScrollDiv" >
+    <header class="navbar-wrapper">
+        <div class="container-fluid  flex-box jc-s ai-c">
         <nav  class="flex5 ">
             <ul class="flex-box jc-st ai-c">
             <li class="title">laura leisure后台管理系统 <span>v1.0</span></li>
@@ -67,31 +68,32 @@
             </li>
             </ul>
         </nav>
+        </div>
     </header>
     <section id="pageWrapper" class="flex-box  noScrollDiv">
-        <aside class="menu_dropdown  text-left noScrollDiv">
-            <div class="scrollDiv">
-            <dl class="selected menu-row">
+        <aside class="admin-aside text-left noScrollDiv">
+            <div class="menu_dropdown scrollDiv ">
+            <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
                     <i class="icon icon-news"></i>
                     <span class="title">资讯管理</span>
                     <i class="icon menu_dropdown-arrow"></i>
                 </dt>
-                <dd class="" style="display: block">
-                    <ul><li class="current"><a href="">资讯管理</a></li></ul>
+                <dd class="" style="display:none">
+                    <ul><li class="current"><a href="./news.html" target="mainFrame">资讯管理</a></li></ul>
                 </dd>
             </dl>
-            <dl class="menu-row selected">
+            <dl class="menu-row">
                 <dt class=" flex-box jc-st ai-c ">
                     <i class="icon icon-img"></i>
                     <span class="title">图片管理</span>
                     <i class="icon menu_dropdown-arrow"></i>
                 </dt>
                 <dd class="" style="display: none">
-                    <ul><li class=""><a href="">图片管理</a></li></ul>
+                    <ul><li class=""><a href="./picture.html"  target="mainFrame">图片管理</a></li></ul>
                 </dd>
             </dl>
-            <dl class="selected menu-row">
+            <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
                     <i class="icon icon-prod"></i>
                     <span class="title">产品管理</span>
@@ -99,13 +101,13 @@
                 </dt>
                 <dd class="" style="display: none">
                     <ul>
-                        <li class=""><a href="">品牌管理</a></li>
-                        <li class=""><a href="">分类管理</a></li>
-                        <li class=""><a href="">产品管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">品牌管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">分类管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">产品管理</a></li>
                     </ul>
                 </dd>
             </dl>
-            <dl class="selected menu-row">
+            <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
                     <i class="icon icon-comment"></i>
                     <span class="title">评论管理</span>
@@ -113,12 +115,12 @@
                 </dt>
                 <dd class="" style="display: none">
                     <ul>
-                        <li class=""><a href="">评论列表</a></li>
-                        <li class=""><a href="">意见反馈</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">评论列表</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">意见反馈</a></li>
                     </ul>
                 </dd>
             </dl>
-            <dl class="selected menu-row">
+            <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
                     <i class="icon icon-member"></i>
                     <span class="title">会员管理</span>
@@ -126,17 +128,17 @@
                 </dt>
                 <dd class="" style="display: none">
                     <ul>
-                        <li class=""><a href="">会员列表</a></li>
-                        <li class=""><a href="">等级管理</a></li>
-                        <li class=""><a href="">积分管理</a></li>
-                        <li class=""><a href="">浏览记录</a></li>
-                        <li class=""><a href="">下载记录</a></li>
-                        <li class=""><a href="">分享记录</a></li>
-                        <li class=""><a href="">删除的会员</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">会员列表</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">等级管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">积分管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">浏览记录</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">下载记录</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">分享记录</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">删除的会员</a></li>
                     </ul>
                 </dd>
             </dl>
-            <dl class="selected menu-row">
+            <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
                     <i class="icon icon-admin"></i>
                     <span class="title">管理员管理</span>
@@ -144,13 +146,13 @@
                 </dt>
                 <dd class="" style="display: none">
                     <ul>
-                        <li class=""><a href="">角色管理</a></li>
-                        <li class=""><a href="">权限管理</a></li>
-                        <li class=""><a href="">管理员列表</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">角色管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">权限管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">管理员列表</a></li>
                     </ul>
                 </dd>
             </dl>
-            <dl class="selected menu-row">
+            <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
                     <i class="icon icon-admin"></i>
                     <span class="title">系统统计</span>
@@ -158,19 +160,19 @@
                 </dt>
                 <dd class="" style="display: none">
                     <ul>
-                        <li class=""><a href="">折线图</a></li>
-                        <li class=""><a href="">时间轴折线图</a></li>
-                        <li class=""><a href="">区域图</a></li>
-                        <li class=""><a href="">柱状图</a></li>
-                        <li class=""><a href="">饼状图</a></li>
-                        <li class=""><a href="">3D柱状图</a></li>
-                        <li class=""><a href="">3D饼状图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">折线图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">时间轴折线图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">区域图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">柱状图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">饼状图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">3D柱状图</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">3D饼状图</a></li>
                     </ul>
                 </dd>
             </dl>
             </div>
         </aside>
-        <section  class="wrapper  text-left">
+        <section  class="wrapper  text-left noScrollDiv">
             <nav class="crumb-part">
                 <ul class="flex-box jc-st ai-c">
                     <li>
@@ -178,17 +180,18 @@
                             <i class="icon icon-home"></i>
                             <span>首页</span>
                             <i class="icon icon-navigator"></i>
-                      </a>
+                        </a>
                     </li>
                     <li>
                         <a class="flex-box jc-s ai-c " href="#">
                             <span>资讯管理</span>
                             <i class="icon icon-navigator"></i>
                         </a>
-                      </li>
+                    </li>
                     <li>资讯列表</li>
-            </ul>
+                </ul>
             </nav>
+            <iframe  name="mainFrame" src="./news.html"></iframe>
         </section>
     </section>
 </div>

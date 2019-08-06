@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资讯列表</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+    <script src="../../libs/jquery/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+</head>
+<body>
+<section  class="bg-w text-left noScrollDiv">
+    <div class="content-wrapper scrollDiv">
+        <div class="search-part flex-box jc-c ai-c">
+            <span>日期范围：</span>
+            <input type="date" value="">
+            <span>-</span>
+            <input type="date" value="">
+            <input type="text" placeholder="请输入关键字">
+            <button class="btn-search">搜索</button>
+        </div>
+        <div class="opt-part flex-box jc-s ai-c">
+            <div class="button-part flex-box jc-s ai-c">
+                <button class="btn-danger btn-batch-del">批量删除</button>
+                <button class="btn-primary btn-add">添加</button>
+            </div>
+            <div class="txt-content">共有数据：54 条</div>
+        </div>
+        <div class="select-part flex-box jc-st ai-c">
+            <div class="txt-content">显示：</div>
+            <select>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+        <table class="table-bg">
+            <tbody>
+            <thead>
+            <tr ><th>选择</th>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>邮箱</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>1</td>
+                <td>张三</td>
+                <td>123456789@qq.com</td>
+                <td>
+                    <div class="flex-box jc-c ai-c">
+                        <a href="#" class="btn-forbidden"></a>  <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                    </div>
+                </td>
+            </tr>
+            <!---->
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>2</td>
+                <td>张三</td>
+                <td>123456789@qq.com</td>
+                <td>
+                    <div class="flex-box jc-c ai-c">
+                        <a href="#" class="btn-forbidden"></a>    <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>3</td>
+                <td>张三</td>
+                <td>123456789@qq.com</td>
+                <td>
+                    <div class="flex-box jc-c ai-c">
+                        <a href="#" class="btn-forbidden"></a>      <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>4</td>
+                <td>张三</td>
+                <td>123456789@qq.com</td>
+                <td>
+                    <div class="flex-box jc-c ai-c">
+                        <a href="#" class="btn-forbidden"></a>     <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>5</td>
+                <td>张三</td>
+                <td>123456789@qq.com</td>
+                <td>
+                    <div class="flex-box jc-c ai-c">
+                        <a href="#" class="btn-forbidden"></a>    <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                    </div>
+                </td>
+            </tr>
+
+            <!---->
+            </tbody>
+        </table>
+        <div class="pagination flex-box jc-s ai-c">
+            <div class="txt-content">显示1到5条，共5条</div>
+            <nav >
+                <ul class="flex-box jc-st ai-c">
+                    <li><button>首页</button></li>
+                    <li><button>上一页</button></li>
+                    <li><button>1</button>
+                        <button>2</button></li>
+                    <li><button>下一页</button></li>
+                    <li><button>尾页</button></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+</body>
+</html>
