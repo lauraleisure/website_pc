@@ -5,7 +5,9 @@
     <title>资讯列表</title>
     <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
     <script src="../../libs/jquery/js/jquery.min.js"></script>
+    <script src="../../libs/layer/layer.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
 <section  class="bg-w text-left noScrollDiv">
@@ -21,7 +23,7 @@
         <div class="opt-part flex-box jc-s ai-c">
             <div class="button-part flex-box jc-s ai-c">
                 <button class="btn-danger btn-batch-del">批量删除</button>
-                <button class="btn-primary btn-add">添加资讯</button>
+                <button class="btn-primary btn-add"><a href="./addNews.html" target="mainFrame">添加资讯</a></button>
             </div>
             <div class="txt-content">共有数据：54 条</div>
         </div>
@@ -51,7 +53,7 @@
                 <td>123456789@qq.com</td>
                 <td>
                     <div class="flex-box jc-c ai-c">
-                        <a href="#" class="btn-forbidden"></a>  <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                        <a href="#" class="btn-forbidden"></a>  <a href="#" class="btn-edit"></a><a href="javascript:void(0);" class="btn-del" onclick="_ctrl.delData(this)"></a>
                     </div>
                 </td>
             </tr>
@@ -63,7 +65,7 @@
                 <td>123456789@qq.com</td>
                 <td>
                     <div class="flex-box jc-c ai-c">
-                        <a href="#" class="btn-forbidden"></a>    <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                        <a href="#" class="btn-forbidden"></a>    <a href="#" class="btn-edit"></a><a href="javascript:void(0);" class="btn-del" onclick="_ctrl.delData(this)"></a>
                     </div>
                 </td>
             </tr>
@@ -74,7 +76,7 @@
                 <td>123456789@qq.com</td>
                 <td>
                     <div class="flex-box jc-c ai-c">
-                        <a href="#" class="btn-forbidden"></a>      <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                        <a href="#" class="btn-forbidden"></a>      <a href="#" class="btn-edit"></a><a href="javascript:void(0);" class="btn-del" onclick="_ctrl.delData(this)"></a>
                     </div>
                 </td>
             </tr>
@@ -85,7 +87,7 @@
                 <td>123456789@qq.com</td>
                 <td>
                     <div class="flex-box jc-c ai-c">
-                        <a href="#" class="btn-forbidden"></a>     <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                        <a href="#" class="btn-forbidden"></a>     <a href="#" class="btn-edit"></a><a href="javascript:void(0);" class="btn-del" onclick="_ctrl.delData(this)"></a>
                     </div>
                 </td>
             </tr>
@@ -96,7 +98,7 @@
                 <td>123456789@qq.com</td>
                 <td>
                     <div class="flex-box jc-c ai-c">
-                        <a href="#" class="btn-forbidden"></a>    <a href="#" class="btn-edit"></a><a href="#" class="btn-del"></a>
+                        <a href="#" class="btn-forbidden"></a>    <a href="#" class="btn-edit"></a><a href="javascript:void(0);" class="btn-del" onclick="_ctrl.delData(this)"></a>
                     </div>
                 </td>
             </tr>

@@ -48,7 +48,14 @@ input,textarea,select,button{
     border: 1px solid #ddd;
     outline: none;
 }
+textarea{
+    box-sizing: border-box;
+    padding:  0.714rem;
+    width: 100%;
+    min-height: 5rem;
+}
 input,button,select{
+    box-sizing: border-box;
     padding: 0 0.714rem;
     height: 2.5rem;
     line-height: 2.5rem;
@@ -179,6 +186,21 @@ td{
 .bg-w{
     background-color: #ffffff;
 }
+.txt-red{
+    color: #dd514c;
+}
+.txt-blue{
+    color: #5a98de;
+}
+.txt-green{
+    color: #429842;
+}
+.txt-white{
+    color: #fff;
+}
+.txt-grey{
+    color: #868686;
+}
 iframe{
     border: none;
     outline: none;
@@ -222,6 +244,9 @@ iframe{
     padding-left: 2.4rem;
     background: #dd514c url(../images/icon-del-w.png) 0.6rem center no-repeat;
     background-size: 1.3rem auto;
+}
+.btn-add a,.btn-add a:link,.btn-add a:hover,.btn-add a:active,.btn-add a:visited{
+    color: #fff;
 }
 .btn-add{
     font-size: 1.1rem;
@@ -283,4 +308,79 @@ iframe{
 }
 h1,h3{
    line-height: 3rem;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+.form-group{
+    box-sizing: border-box;
+    margin: 1rem 0;
+}
+.form-group .txt-title{
+    text-align: right;
+    /*flex: 0.15;*/
+    flex-shrink: 1;
+    min-width: 8rem;
+    padding-right: 1rem;
+}
+.form-group .txt-input{
+    flex: 0.8;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+}
+.form-group .txt-input input,.form-group .txt-input select,.form-group .txt-input textarea{
+    width: 100%;
+}
+.preview-img {
+    position: relative;
+    border: 1px solid #ddd;
+    width: 7rem;
+    height: 5rem;
+    margin: 0.5rem 0.5rem 0 0;
+}
+.preview-img img{
+   width: 100%;
+   height: 100%;
+  vertical-align: middle;
+}
+.preview-img .img-del{
+    background: url('../images/icon-close-red.png') center no-repeat;
+    background-size: 1.5rem auto;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    z-index: 10;
+
+}
+input[type=file]{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+}
+.upload {
+    position: relative;
+    border: 1px solid #ddd;
+    width: 7rem;
+    height: 5rem;
+    background: url('../images/icon-upload-add.png') center no-repeat;
+    background-size: 2rem auto;
+}
+.full-size-img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.full-size-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加资讯</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+    <script src="../../libs/jquery/js/jquery.min.js"></script>
+    <script src="../../libs/layer/layer.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <script src="scripts/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+        })
+    </script>
+</head>
+<body>
+<section  class="bg-w text-left noScrollDiv">
+    <article class="content-wrapper scrollDiv">
+        <form>
+              <div class="form-group flex-box jc-c ai-c">
+                  <div class="txt-title"><span class="txt-red">*</span>文章标题：</div>
+                  <div class="txt-input"><input type="text" /></div>
+              </div>
+            <div class="form-group flex-box jc-c ai-c">
+                  <div class="txt-title">简略标题：</div>
+                  <div class="txt-input"><input type="text" /></div>
+              </div>
+            <div class="form-group flex-box jc-c ai-c">
+                  <div class="txt-title"><span class="txt-red">*</span>分类栏目：</div>
+                  <div class="txt-input"><select name="category"><option>全部栏目</option></select></div>
+              </div>
+            <div class="form-group flex-box jc-c ai-c">
+                  <div class="txt-title"><span class="txt-red">*</span>文章类型：</div>
+                  <div class="txt-input"><select name="type"><option>全部类型</option></select></div>
+              </div>
+            <div class="form-group flex-box jc-c ai-c">
+                <div class="txt-title">文章摘要：</div>
+                <div class="txt-input"><textarea type="text" placeholder="说点什么...最少输入10个字符" ></textarea></div>
+            </div>
+            <div class=" form-group thumbnail flex-box jc-c ai-c">
+                <div class="txt-title">缩略图：</div>
+                <div class="txt-input flex-box jc-st ai-c">
+                    <div class="preview-img"><img src="./upload/upload.jpeg"  onclick="_ctrl.viewFullSizeImg(this)" /><span class="img-del" onclick="_ctrl.removeImg(this)"></span></div>
+                    <div class="upload">
+                        <input type="file" id="photo"  accept="image/*" value=""  onchange="_ctrl.imgUpload(this)"/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group flex-box jc-c ai-c">
+                <div class="txt-title">文章内容：</div>
+                <div class="txt-input"><textarea type="text"  placeholder="说点什么...最少输入10个字符"></textarea></div>
+            </div>
+        </form>
+    </article>
+</section>
+</body>
+</html>

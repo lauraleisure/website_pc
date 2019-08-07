@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
     <script src="../../libs/jquery/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
-    <script src="./scripts/menudropdown.js"></script>
+    <script src="scripts/main.js"></script>
     <script type="text/javascript">
         $(function () {
             _ctrl.init();
@@ -80,7 +80,7 @@
                     <i class="icon menu_dropdown-arrow"></i>
                 </dt>
                 <dd class="" style="display:none">
-                    <ul><li class="current"><a href="./news.html" target="mainFrame">资讯管理</a></li></ul>
+                    <ul><li><a href="./news.html" target="mainFrame">资讯管理</a></li></ul>
                 </dd>
             </dl>
             <dl class="menu-row">
@@ -154,7 +154,7 @@
             </dl>
             <dl class="menu-row">
                 <dt class="flex-box jc-st ai-c ">
-                    <i class="icon icon-admin"></i>
+                    <i class="icon icon-count"></i>
                     <span class="title">系统统计</span>
                     <i class="icon menu_dropdown-arrow"></i>
                 </dt>
@@ -170,6 +170,23 @@
                     </ul>
                 </dd>
             </dl>
+                <dl class="menu-row">
+                <dt class="flex-box jc-st ai-c ">
+                    <i class="icon icon-sys-set"></i>
+                    <span class="title">系统管理</span>
+                    <i class="icon menu_dropdown-arrow"></i>
+                </dt>
+                <dd class="" style="display: none">
+                    <ul>
+                        <li class=""><a href="./home.html" target="mainFrame">系统信息</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">系统设置</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">栏目管理</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">数据字典</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">屏蔽词</a></li>
+                        <li class=""><a href="./main.html" target="mainFrame">系统日志</a></li>
+                    </ul>
+                </dd>
+            </dl>
             </div>
         </aside>
         <div class="dislpayArrow hidden-xs">
@@ -178,20 +195,22 @@
         <section  class="wrapper  text-left noScrollDiv">
             <nav class="crumb-part">
                 <ul class="flex-box jc-st ai-c">
-                    <li>
+                    <li class="home">
                         <a class="flex-box jc-s ai-c " href="./home.html" target="mainFrame">
                             <i class="icon icon-home"></i>
                             <span>首页</span>
                             <i class="icon icon-navigator"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="level1">
                         <a class="flex-box jc-s ai-c " href="#">
-                            <span>资讯管理</span>
+                            <span class="txt-title">资讯管理</span>
                             <i class="icon icon-navigator"></i>
                         </a>
                     </li>
-                    <li>资讯列表</li>
+                    <li class="level2">
+                        <span class="txt-title">资讯列表</span>
+                    </li>
                 </ul>
             </nav>
             <iframe  name="mainFrame" src="./home.html"></iframe>

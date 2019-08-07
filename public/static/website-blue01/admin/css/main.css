@@ -74,8 +74,11 @@ aside a,.crumb-part a{
 .menu_dropdown dl dt span{
     width:7.5rem ;
 }
-.menu_dropdown  ul li.current,.menu_dropdown  ul li:hover{
+.menu_dropdown  ul li.current{
     background: #fafafa;
+}
+.menu_dropdown  ul li:hover{
+    background: #f5fafe;
 }
 .menu_dropdown  ul li{
     padding-left:3.714rem;
@@ -145,6 +148,14 @@ aside a,.crumb-part a{
 }
 .icon.icon-admin{
     background: url('../images/icon-admin.png') center no-repeat;
+    background-size: 1.45rem auto;
+}
+.icon.icon-count{
+    background: url('../images/icon-count.png') center no-repeat;
+    background-size: 1.25rem auto;
+}
+.icon.icon-sys-set{
+    background: url('../images/icon-sys-set.png') center no-repeat;
     background-size: 1.45rem auto;
 }
  /*右侧导航小图标*/
