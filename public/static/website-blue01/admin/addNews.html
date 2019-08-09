@@ -7,52 +7,122 @@
     <script src="../../libs/jquery/js/jquery.min.js"></script>
     <script src="../../libs/layer/layer.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <script type="text/javascript" charset="utf-8" src="../../libs/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../libs/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../../libs/ueditor/lang/zh-cn/zh-cn.js"></script>
     <script src="scripts/main.js"></script>
+
     <script type="text/javascript">
         $(function () {
-
+            //实例化编辑器
+            // var ue = UE.getEditor('editor', {});
+            var ue = UE.getEditor('editor', {
+                toolbars: [
+                    [
+                        'undo', //撤销
+                        'bold', //加粗
+                        'underline', //下划线
+                        'preview', //预览
+                        'horizontal', //分隔线
+                        'inserttitle', //插入标题
+                        'cleardoc', //清空文档
+                        'fontfamily', //字体
+                        'fontsize', //字号
+                        'paragraph', //段落格式
+                        'simpleupload', //单图上传
+                        'insertimage', //多图上传
+                        'attachment', //附件
+                        'music', //音乐
+                        'inserttable', //插入表格
+                        'emotion', //表情
+                        'insertvideo', //视频
+                        'justifyleft', //居左对齐
+                        'justifyright', //居右对齐
+                        'justifycenter', //居中对
+                        'justifyjustify', //两端对齐
+                        'forecolor', //字体颜色
+                        'fullscreen', //全屏
+                        'edittip ', //编辑提示
+                        'customstyle', //自定义标题
+                        'template', //模板
+                    ]
+                ]
+            });
         })
     </script>
 </head>
 <body>
 <section  class="bg-w text-left noScrollDiv">
     <article class="content-wrapper scrollDiv">
-        <form>
+        <!--<form >-->
               <div class="form-group flex-box jc-c ai-c">
                   <div class="txt-title"><span class="txt-red">*</span>文章标题：</div>
-                  <div class="txt-input"><input type="text" /></div>
+                  <div class="txt-input"><input id="title" name='title' type="text"  required/></div>
               </div>
             <div class="form-group flex-box jc-c ai-c">
-                  <div class="txt-title">简略标题：</div>
-                  <div class="txt-input"><input type="text" /></div>
+                  <div class="txt-title"><span class="txt-red">*</span>简略标题：</div>
+                  <div class="txt-input"><input id="brief-title" name='brief-title' type="text"  required/></div>
               </div>
             <div class="form-group flex-box jc-c ai-c">
                   <div class="txt-title"><span class="txt-red">*</span>分类栏目：</div>
-                  <div class="txt-input"><select name="category"><option>全部栏目</option></select></div>
+                  <div class="txt-input">
+                      <select id="category" name="category">
+                      <option value="0">全部栏目</option>
+                      <option value="1">新闻资讯</option>
+                      <option value="11">行业动态</option>
+                      <option value="12">行业资讯</option>
+                      <option value="13">行业新闻</option>
+                  </select></div>
               </div>
             <div class="form-group flex-box jc-c ai-c">
                   <div class="txt-title"><span class="txt-red">*</span>文章类型：</div>
-                  <div class="txt-input"><select name="type"><option>全部类型</option></select></div>
+                  <div class="txt-input"><select id="type" name="type">
+                      <option value="0">全部类型</option>
+                      <option value="1">帮助说明</option>
+                      <option value="2">新闻资讯</option>
+                  </select></div>
               </div>
             <div class="form-group flex-box jc-c ai-c">
                 <div class="txt-title">文章摘要：</div>
-                <div class="txt-input"><textarea type="text" placeholder="说点什么...最少输入10个字符" ></textarea></div>
+                <div class="txt-input"><textarea id="digest" name='digest' type="text" required placeholder="说点什么...最少输入10个字符" ></textarea></div>
+            </div>
+            <div class="form-group flex-box jc-c ai-c">
+                <div class="txt-title">文章作者：</div>
+                <div class="txt-input"><input id="author" name='author' type="text"  /></div>
+            </div>
+          <div class="form-group flex-box jc-c ai-c">
+                <div class="txt-title">文章来源：</div>
+                <div class="txt-input text-left"><input id="origin" name='origin' type="text"  /></div>
+            </div>
+            <div class="form-group flex-box jc-c ai-c">
+                <div class="txt-title">允许评论：</div>
+                <div class="txt-input"><input id="comment" name='comment' type="checkbox"  /></div>
             </div>
             <div class=" form-group thumbnail flex-box jc-c ai-c">
                 <div class="txt-title">缩略图：</div>
                 <div class="txt-input flex-box jc-st ai-c">
                     <div class="preview-img"><img src="./upload/upload.jpeg"  onclick="_ctrl.viewFullSizeImg(this)" /><span class="img-del" onclick="_ctrl.removeImg(this)"></span></div>
                     <div class="upload">
-                        <input type="file" id="photo"  accept="image/*" value=""  onchange="_ctrl.imgUpload(this)"/>
+                        <input type="file" name='thumbnail' id="photo"  accept="image/*" value=""  onchange="_ctrl.imgUpload(this)"/>
                     </div>
 
                 </div>
             </div>
-            <div class="form-group flex-box jc-c ai-c">
+            <div class="form-group flex-box jc-c ai-s">
                 <div class="txt-title">文章内容：</div>
-                <div class="txt-input"><textarea type="text"  placeholder="说点什么...最少输入10个字符"></textarea></div>
+                <div class="txt-input">
+                    <div id="editor" style="width:100%;height:600px;"></div>
+                </div>
             </div>
-        </form>
+            <div class="form-group flex-box jc-c ai-c">
+                <div class="txt-title"></div>
+                <div class="txt-input flex-box jc-st ai-c">
+                    <button class="btn btn-primary " id="saveData" onclick="_ctrl.saveData()">保存并提交审核</button>
+                    <button class="btn btn-secondary" id="saveDraft">保存草稿</button>
+                    <button class="btn btn-default" id="cancelSave">取  消</button>
+                </div>
+            </div>
+        <!--</form>-->
     </article>
 </section>
 </body>

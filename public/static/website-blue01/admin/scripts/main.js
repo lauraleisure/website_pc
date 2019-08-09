@@ -132,6 +132,16 @@ var main=function () {
 
             });
         },
+        saveData:function(e){
+            console.log(UE.getContent());
+            var postData={
+                "title":"",
+                "title":"",
+                "title":"",
+                "content":"",
+            }
+
+        },
         currentMenu:function (querySelector) {
             var vlist=document.querySelector(querySelector).querySelectorAll('li');
             var array = [];

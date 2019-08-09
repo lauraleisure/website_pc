@@ -6,15 +6,16 @@
     <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
     <script src="../../libs/jquery/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <script language="javascript" type="text/javascript" src="../../libs/My97DatePicker/WdatePicker.js"></script>
 </head>
 <body>
 <section  class="bg-w text-left noScrollDiv">
     <div class="content-wrapper scrollDiv">
         <div class="search-part flex-box jc-c ai-c">
             <span>日期范围：</span>
-            <input type="date" value="">
+            <input class="Wdate" id="startDate" type="text" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
             <span>-</span>
-            <input type="date" value="">
+            <input class="Wdate" id="endDate" type="text" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
             <input type="text" placeholder="请输入关键字">
             <button class="btn-search">搜索</button>
         </div>
