@@ -42,7 +42,8 @@ var main=function () {
                         $(this).siblings().css('display','none');
                     }else{
                         $(this).addClass('selected');
-                        $(this).siblings().css('display','block');
+                         $(this).siblings().css('display','block');
+                        // $(this).siblings().animate({display:'block'},100,"linear");
                         $(this).parent().siblings().find('dt').removeClass('selected');
                         $(this).parent().siblings().find('dd').css('display','none');
                         $('.crumb-part').find('.level1 .txt-title').text($(this).find('.title').text());

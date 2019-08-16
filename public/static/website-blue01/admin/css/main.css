@@ -28,6 +28,13 @@ header a:hover{
 /**/
 
 /**/
+.dislpayArrow ,.admin-aside,.wrapper{
+    -moz-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
 aside{
     width: 14.214rem;
     background: rgba(238, 238, 238, 0.96);
@@ -62,7 +69,7 @@ aside a,.crumb-part a{
     height: 100%;
 }
 .menu_dropdown dl dt{
-    font-size: 1.143rem;
+    font-size: 1rem;
     padding-left:0.714rem;
     height: 3.5rem;
     line-height: 3.5rem;
@@ -119,13 +126,18 @@ aside a,.crumb-part a{
     background: url('../images/icon-fold.png') center no-repeat;
     background-size: 1.5rem auto;
 }
+.icon.menu_dropdown-arrow{
+    transition-duration:0.3s ;transition-property:all
+}
 .selected .icon.menu_dropdown-arrow{
     /*background: url('../images/icon-unfold.png') center no-repeat;*/
     /*background-size: 1.5rem auto;*/
     transform: rotate(180deg);
+
 }
 .selected dd{
     display: block!important;
+    transition-duration:0.3s ;transition-property:all
 }
 .icon.icon-news{
     background: url('../images/icon-news.png') center no-repeat;
@@ -209,11 +221,8 @@ table.system_info  tr td{
     width: 0px;
     height: 100%;
     z-index: 1001;
-    -moz-transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-    -ms-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
-    transition: all 0.2s ease 0s;
+
+
 }
 .dislpayArrow a {
     background: url('../images/icon_arrow.png')  0 0 no-repeat;
